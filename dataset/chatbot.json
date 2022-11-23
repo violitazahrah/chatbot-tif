@@ -1,0 +1,303 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo",
+        "hai",
+        "halo",
+        "helo",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan",
+        "bot",
+        "gem bot",
+        "hai bot",
+        "salam kenal",
+        "kenalan dong",
+        "helo bot",
+        "helo gem bot",
+        "hai gem bot",
+        "salam kenal bot"
+      ],
+      "responses": ["Hai! Gem Bot di sini. Mau tau informasi tentang apa nih?", "Halo! Saya Gem Bot, salam kenal ya! Mau tau tentang Teknik Informatika, kan?", "Helo! Ini Gem Bot. Lagi kepo tentang Teknik Informatika ya?"]
+    },
+    {
+      "tag": "salam",
+      "patterns": ["assalamualaikum", "assalamualaikum bot", "assalamualaikum gem bot", "assalamualaikum warahmatullahi wabarakatuh", "assalamualaikum warahmatullahi wabarakatuh bot", "assalamualaikum warahmatullahi wabarakatuh gem bot"],
+      "responses": ["waalaikumussalam warahmatullahi wabarakatuh, salam kenal aku gem bot", "waalaikumussalam , kenalin aku gem bot", "waalaikumussalam warahmatullahi wabarakatuh, kenalin aku gem bot"]
+    },
+    {
+      "tag": "ping",
+      "patterns": ["p", "p bot", "p gem bot", "ping", "ping bot", "ping gem bot"],
+      "responses": ["P juga, salam kenal aku gem bot", "iyaa, kenalin aku gem bot", "haaiii, kenalin aku gem bot"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you",
+        "sayonara",
+        "dadah bot",
+        "see you bot",
+        "bye bot",
+        "sampai jumpa bot",
+        "good bye bot",
+        "dadah gem bot",
+        "bye gem bot",
+        "see you gem bot"
+      ],
+      "responses": ["Bye!", "Dadahh!", "Good bye!", "Dahh, semoga harimu menyenangkan yaa!", "Sampai jumpa lagi!", "See u! Senang bisa membantu"]
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Terima kasih",
+        "Makasih",
+        "Terima kasih banyak",
+        "makasih banyak",
+        "makasih sudah membantu",
+        "terima kasih infonya",
+        "makasih informasinya",
+        "makasih bot",
+        "terima kasih bot",
+        "thx",
+        "makasih gem bot"
+      ],
+      "responses": ["Dengan senang hati", "Sama-sama yaa", "Sama-sama, senang bisa membantu", "Dengan senang hati, bisa membantu"]
+    },
+
+    {
+      "tag": "Alamat_Universitas_Malikussaleh",
+      "patterns": ["Dimana Universitas Malikussaleh?", "Lokasi Universitas Malikussaleh?", "Alamat Universitas Malikussaleh?", "Alamat Malikussaleh?", "Alamat unimal?", " Dimana unimal?", " Lokasi unimal?"],
+      "responses": [
+        "Universitas Malikussaleh berlokasi di Aceh, kalau kampus utamanya di Cot Tengku Nie Reuleut, Muara Batu, Aceh Utara, ada juga di Jl. Tgk. Chik Ditiro, Lancang Garam, Lhokseumawe, dan ada di Kampus Bukit Indah Lhokseumawe Telp : +62.645.41373, Fax : +62.645.44450."
+      ]
+    },
+    {
+      "tag": "Universitas_Malikussaleh",
+      "patterns": ["sejarah universitas malikussaleh?", "universitas malikussaleh?", "awal terbentuk universitas malikussaleh?", "sejarah unimal?", "awal terbentuk unimal?", "unimal"],
+      "responses": [
+        "Universitas Malikussaleh didirikan dengan mengambil nama besar Raja Kerajaan Samudera Pasai pertama, Sultan Malikussaleh. Universitas Malikussaleh bermula dari menjelmanya Akademi Ilmu Agama jurusan Syariah yang didirikan dengan Surat Keputusan Bupati/Kepala Daerah Tingkat II Aceh Utara. Perguruan Tinggi Islam ini mengalami perubahan nama lagi menjadi Perguruan Tinggi Islam Malikussaleh (disingkat dengan sebutan PERTIM), melalui Surat Keputusan Yayasan Perguruan Tinggi Islam tanggal 24 Mei 1972. Tahun 1980 menjadi Yayasan Universitas Malikussaleh dengan singkatan UNIMA. Tim Persiapan Perubahan Status Universitas Malikussaleh Lhokseumawe dari Perguruan Tinggi Swasta (PTS) menjadi Perguruan Tinggi Negeri (PTN), selanjutnya disingkat Tim Persiapan. Pada hari Sabtu Tanggal 8 September 2001 di Lhokseumawe, Presiden Republik Indonesia Megawati Soekarno Putri meresmikan Pendirian Universitas Malikussaleh sebagai Pusat Pengembangan Sumber Daya Manusia Bagi Masyarakat Aceh. Saat ini Universitas Malikussaleh memiliki singkatan nama UNIMAL. Panjang bangetkan ya ceritanya, untuk lebih lanjut bisa kunjungi web nya nih https://unimal.ac.id/index/page/1/sejarah-universitas-malikussaleh"
+      ]
+    },
+    {
+      "tag": "Fakultas_Teknik",
+      "patterns": ["sejarah fakultas teknik?", "fakultas teknik?", "fakultas", "fakultas teknik unimal?", "dimana fakultas teknik?", "lokasi fakultas teknik"],
+      "responses": [
+        "1982 didirikan Sekolah Tinggi Teknik Malikussaleh, berada di bawah koordinasi Yayasan Pendidikan Malikussaleh, yaitu Jurusan Teknik Sipil dan Teknik Mesin. Pada tahun 1983 dibuka jurusan Teknik & Manajemen Industri. 1996, membuka satu jurusan baru yaitu Jurusan Teknik Kimia. Pada tanggal 11 September 1989 terdaftar sebagai FT UNIMAL dan membuka jurusan Teknik Elektro. Tahun Ajaran 2003-2004 membuka 2 jurusan baru yaitu Prodi Informatika di bawah jurusan Teknik Elektro dan Prodi Teknik Arsitektur dibawah jurusan Teknik Sipil dan tahun 2014 membuka Prodi Sistem Informasi.Untuk sekarang beralamat di Jl. Kampus Unimal Bukit Indah, Blang Pulo, Kec. Muara Satu, Kabupaten Aceh Utara, Aceh. "
+      ]
+    },
+    {
+      "tag": "Alamat_teknik_informatika",
+      "patterns": [
+        "Dimana teknik informatika universitas malikussaleh?",
+        "Lokasi teknik informatika universitas malikussaleh?",
+        "Alamat teknik informatika universitas malikussaleh?",
+        "Alamat teknik informatika unimal?",
+        "Lokasi teknik informatika unimal?",
+        "Dimana teknik informatika unimal?",
+        "dimana informatika unimal",
+        "Lokasi informatika unimal",
+        "alamat informatika unimal"
+      ],
+      "responses": ["Berada di Universitas Malikussaleh Aceh, lebih tepatnya Bukit Indah jalan Batam, nah biar lebih jelasnya bisa di cek di laman utama ya, ada maps nya kok."]
+    },
+    {
+      "tag": "sejarah_teknik_informatika",
+      "patterns": [
+        "gimana sejarah teknik informatika universitas malikussaleh?",
+        "sejarah teknik informatika universitas malikussaleh?",
+        "sejarah teknik informatika unimal?",
+        "teknik informatika unimal?",
+        "teknik informatika",
+        "informatika",
+        "sejarah informatika unimal",
+        "infomatika unimal",
+        "teknik informatika universitas malikussaleh?"
+      ],
+      "responses": [
+        "Nih ada sedikit sejarah tentang teknik informatika di unimal, Universitas Malikussaleh berinisiatif mendirikan program studi Teknik Informatika, yang kemudian berdiri dengan Surat Keputusan Dirjen Dikti bernomor: 2289/D/T/2003 dan bertanggal 05 September 2003, untuk lebih lengkapnya bisa dilihat di web nya nih https://informatika.unimal.ac.id/index/page/35/sejarah."
+      ]
+    },
+    {
+      "tag": "akreditasi_teknik_informatika",
+      "patterns": [
+        "apa akrediatasi teknik informatika universitas malikussaleh?",
+        "akrediatasi teknik informatika universitas malikussaleh?",
+        "akrediatasi teknik informatika unimal?",
+        "akreditasi jurusan informatika unimal",
+        "akreditasi prodi teknik informatika unimal?",
+        "akreditasi"
+      ],
+      "responses": ["Info nih untuk yang nanyain Akreditasi di Teknik Informatika Universitas Malikussaleh, akreditasinya masih B."]
+    },
+    {
+      "tag": "ukt_teknik_informatika",
+      "patterns": [
+        "ukt di teknik informatika universitas malikussaleh?",
+        "berapa ukt di teknik informatika universitas malikussaleh?",
+        "ukt teknik informatika universitas malikussaleh?",
+        "ukt teknik informatika unimal?",
+        "ukt",
+        "ukt informatika unimal?"
+      ],
+      "responses": ["Nah untuk yang nanyain masalah UKT, UKT di Prodi Teknik Informatika di Universitas Malikussaleh minimalnya : Rp.500.000 dan maksimalnya : Rp. 3.000.000"]
+    },
+    {
+      "tag": "organisasi_teknik_informatika",
+      "patterns": [
+        "organisasi di teknik informatika universitas malikussaleh?",
+        "ada organisasi apa saja di teknik informatika universitas malikussaleh?",
+        "ada organisasi apa aja di teknik informatika universitas malikussaleh?",
+        "ada organisasi apa aja di teknik informatika unimal?",
+        "organisasi apa saja di teknik informatika unimal?",
+        "organisasi apa aja di teknik informatika unimal?",
+        "organisasi di teknik informatika unimal?",
+        "organisasi",
+        "organisasi teknik informatika unimal?"
+      ],
+      "responses": [
+        "ada HIMATIF yaitu Himpunan Mahasiswa Teknik Informatika yang dibentuk pada 02 Mei 2005, untuk lebih lanjut bisa dikepoin di media sosialnya nih, https://www.instagram.com/himatifunimal/ https://www.facebook.com/himatif.unimal.1?fref=ts himatif@unimal.ac.id himatif.unimal.ac.id untuk akun youtubenya juga ada ya https://www.youtube.com/c/HIMATIFUNIMAL satu lagi ada IKATIF yaitu Ikatan Alumni Teknik Informatika Universitas Malikussaleh merupakan sebuah wadah silaturrahmi bagi para lulusan yang telah menyelesaikan studi di Prodi Teknik Informatika Universitas Malikussaleh, bisa juga dikepoin dimedia sosialnya nih https://www.instagram.com/ikatifunimal/ https://ikatif.unimal.ac.id/ ikatif@unimal.ac.id"
+      ]
+    },
+    {
+      "tag": "organisasi1",
+      "patterns": [
+        "apa itu himatif?",
+        "himatif?",
+        "sejarah himatif?",
+        "himpunan teknik informatika unimal?",
+        "media sosial himatif?",
+        "media sosial himpunan teknik informatika unimal?",
+        "media sosial himpunan informatika unimal?",
+        "himpunan teknik informatika universitas malikussaleh",
+        "himpunan"
+      ],
+      "responses": [
+        "HIMATIF yaitu Himpunan Mahasiswa Teknik Informatika yang dibentuk pada 02 Mei 2005, untuk lebih lanjut bisa dikepoin di media sosialnya nih, https://www.instagram.com/himatifunimal/ https://www.facebook.com/himatif.unimal.1?fref=ts himatif@unimal.ac.id himatif.unimal.ac.id untuk akun youtubenya juga ada ya https://www.youtube.com/c/HIMATIFUNIMAL."
+      ]
+    },
+    {
+      "tag": "organisasi2",
+      "patterns": [
+        "apa itu ikatif?",
+        "ikatif?",
+        "alumni teknik informatika unimal?",
+        "media sosial ikatif?",
+        "media sosial ikatan alumni teknik informatika unimal?",
+        "media sosial ikatan informatika unimal?",
+        "alumni",
+        "alumni informatika",
+        "alumni informatika unimal",
+        "alumni teknik informatika universitas malikussaleh"
+      ],
+      "responses": [
+        "IKATIF yaitu Ikatan Alumni Teknik Informatika Universitas Malikussaleh merupakan sebuah wadah silaturrahmi bagi para lulusan yang telah menyelesaikan studi di Prodi Teknik Informatika Universitas Malikussaleh, bisa juga dikepoin dimedia sosialnya nih https://www.instagram.com/ikatifunimal/ https://ikatif.unimal.ac.id/ ikatif@unimal.ac.id"
+      ]
+    },
+    {
+      "tag": "teknik_informatika_sulit",
+      "patterns": [
+        "Apa kuliah di Teknik Informatika Universitas Malikussaleh itu sulit?",
+        "kuliah di Teknik Informatika Universitas Malikussaleh itu sulit?",
+        "apakah kuliah di Teknik Informatika unimal itu sulit?",
+        "apakah informatika sulit",
+        "kenapa informatika itu sulit?",
+        "kenapa kuliah di Teknik Informatika itu sulit?",
+        "kenapa kuliah di Teknik Informatika unimal itu sulit?",
+        "kuliah informatika sulit",
+        "informatika sulit",
+        "teknik informatika sulit"
+      ],
+      "responses": [
+        "Memang kuliah jurusan teknik informatika ini sulit. Sebab kamu harus menguasai ilmu coding yang ada unsur matematikanya juga ilmu pemrograman. Kamu juga butuh ketelitian dan ketekunan tingkat tinggi. Bukan hanya logika, namun pelajaran Informatika yang terkait dengan Matematika Diskrit, Statistika, Kalkulus, Aljabar, bahkan Algoritma juga membutuhkan ketelitian tingkat tinggi. Ketelitian ini pun sangat dibutuhkan saat mengerjakan coding. Semangat gaes!!!"
+      ]
+    },
+    {
+      "tag": "kebutuhan_kuliah_teknik_informatika",
+      "patterns": [
+        "Apa saja kebutuhan untuk kuliah Teknik Informatika Universitas Malikussaleh?",
+        "kebutuhan kuliah di Teknik Informatika Universitas Malikussaleh?",
+        "Apa saja kebutuhan untuk kuliah Teknik Informatika unimal?",
+        "kebutuhan kuliah informatika ada apa aja sih?",
+        "kebutuhan kuliah informatika",
+        "kebutuhan",
+        "kebutuhan kuliah teknik informatika di unimal?",
+        "kebutuhan untuk kuliah Teknik Informatika unimal?"
+      ],
+      "responses": [
+        "Mahasiswa Jurusan Teknik Informatika akan diajarkan tentang pemrograman (programming), pengembangan perangkat lunak (software), dan teknologi jaringan komputer. Nah, jadi kita perlu ni untuk memahami spesifikasi laptop yang sesuai untuk ngampus di Teknik Informatika. Selain itu, dasar matematika dan kemampuan analisis yang kuat wajib dimiliki untuk meminimalisir terjadinya kesalahan dalam membuat suatu program. Semangat untuk kamu :D"
+      ]
+    },
+    {
+      "tag": "yang_dipelajari_teknik_informatika",
+      "patterns": [
+        "Apa aja sih yang dipelajari di Teknik Informatika?",
+        "yang dipelajari di teknik informatika universitas malikussaleh?",
+        "yang dipelajari di teknik informatika unimal?",
+        "apa saja yang dipelajari di teknik informatika unimal?",
+        "teknik informatika unimal belajar apa aja sih?",
+        "yang dipelajari di informatika unimal?",
+        "yang dipelajari apa aja",
+        "yang dipelajari",
+        "mempelajari",
+        "dipelajari"
+      ],
+      "responses": [
+        "Teknik Informatika adalah salah satu jurusan di fakultas teknik yang mempelajari bagaimana penerapan logika matematika dalam pengelolaan  informasi yang dapat meliputi transformasi data atau  pengolahan fakta-fakta simbolik dengan memanfaatkan teknologi komputer seoptimal mungkin."
+      ]
+    },
+    {
+      "tag": "prospek_kerja",
+      "patterns": [
+        "Prospek Kerjanya ada apa aja?",
+        "lulusan dari teknik informatika bisa kerja apa?",
+        "lulus dari teknik informatika bisa jadi apa sih?",
+        "lulus informatika bisa jadi apa sih?",
+        "lulus dari teknik informatika kerja jadi apa?",
+        "prospek kedepan setelah lulus apa aja?",
+        "lulus dari informatika kerja apa ya?",
+        "prospek kerja",
+        "kerja"
+      ],
+      "responses": [
+        "Nah, ada kabar bagus nih untuk lulusan Teknologi apalagi Informatika, prospek kerja kedepannya banyak banget, ada Software Engineer, System Analyst dan System Integrator, Konsultan IT, Database Engineer / Database Administrator, Web Engineer / Web Administrator, Computer Network / Data Communication Engineer, Game Developer, Programmer dan yang lainnya."
+      ]
+    },
+    {
+      "tag": "asal_sekolah",
+      "patterns": [
+        "Asal sekolah untuk kuliah di Teknik Informatika?",
+        "bisa dari sekolah mana aja?",
+        "apakah lulusan SMA boleh lanjut kuliah di teknik informatika?",
+        "lulusan dari SMK bisa ngga ya kuliah di teknik informatika",
+        "apakah lulusan pesantren bisa kuliah di informatika",
+        "lulusan pesantren bisa ngga kuliah di informatika",
+        "asal sekolah",
+        "lulusan pesantren",
+        "lulusan SMK",
+        "lulusan SMA"
+      ],
+      "responses": ["Bisa darimana aja nih, mau kamu dari SMA, MA, SMK bahkan yang lulusan pesantren pun bisa lho ngampus di Teknik Informatika, apalagi kalo ngampusnya di Teknik Informatika Universitas Malikussaleh hehehe."]
+    }
+  ]
+}

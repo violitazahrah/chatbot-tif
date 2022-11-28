@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous" />
+  <title>Feedback</title>
+</head>
+
+<body onload="onPageLoad()">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="home"><b>Gem BOT</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portofolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="bot">BOT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Feedback">Feedback</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <br>
+  <div class="text_todos">
+    <h2 style="text-align: center;"><b>FORM FEEDBACK</b></h2>
+    <p style="text-align: center;"><b>Isilah form dibawah ini sesuai kesan anda</b></p>
+  </div>
+  <div class="container">
+    <div class="todos">
+      <form name="formPendaftaran" onsubmit="return validateForm()">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nama Lengkap:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="fname" placeholder="Silahkan Masukan Nama Lengkap"
+              autocomplete="off"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="asalsekolah" class="form-label">Asal sekolah</label><br>
+          </div>
+          <!--Option-->
+          <div class="col-75">
+            <select id="Tingkatan" onchange="onChangeBrand()">
+              <option>-- Pilih tingkatan --</option>
+              <option>SD</option>
+              <option>SMP</option>
+              <option>SMA</option>
+              <option>SMK</option>
+            </select>
+            <select id="Kelas">
+              <option>-- Pilih kelas --</option>
+              <option>1 SD</option>
+              <option>2 SD</option>
+              <option>3 SD</option>
+              <option>4 SD</option>
+              <option>5 SD</option>
+              <option>6 SD</option>
+              <option>1 SMP</option>
+              <option>2 SMP</option>
+              <option>3 SMP</option>
+              <option>1 SMA</option>
+              <option>2 SMA</option>
+              <option>3 SMA</option>
+              <option>1 SMK</option>
+              <option>2 SMK</option>
+              <option>3 SMK</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="tglisifeedback">Tanggal Isi Feedback:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="date" id="tglisifeedback" name="tglisifeedback"><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="feedback">Feedback:</label><br>
+          </div>
+          <div class="col-75">
+            <textarea name="message" id="feedback" rows="10" cols="30"
+              placeholder="Silahkan Masukan Saran Anda"></textarea>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <input onclick="saveToLocalstorage()" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Gem BOT</b></h3>
+          </div>
+          <p>
+            Gem BOT adalah sebuah web chatbot yang akan memberikan informasi mengenai prodi
+            Teknik Informatika Universitas Malikussaleh
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Menu</b></h3>
+          </div>
+          <div class="konten">
+            <p><a class="link_medsos" href="home">Home</a></p>
+            <p><a class="link_medsos" href="about">About Us</a></p>
+            <p><a class="link_medsos" href="portofolio">Portofolio</a></p>
+            <p><a class="link_medsos" href="blog">Blog</a></p>
+            <p><a class="link_medsos" href="bot">BOT</a></p>
+            <p><a class="link_medsos" href="Feedback">Feedback</a></p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Alamat</b></h3>
+          </div>
+          <p>
+            JL. Kampus Unimal Bukit Indah Blang Pulo, Kec. Muara Satu, Kabupaten Aceh Utara
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Media Sosial</b></h3>
+          </div>
+          <div class="tabel_a">
+            <div class="tabel1">
+              <table>
+                <tr>
+                  <td>
+                    <div class="medsos">
+                      <img src="/static//images/medsos/instagram.png" alt="" width="30px" height="30px">
+                    </div>
+                  </td>
+                  <td>
+                    <p class="medsos2">
+                      <a class="link_medsos" href="https://www.instagram.com/teknikinformatika_unimal/"
+                        target="_blank">teknikinformatika_unimal</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="medsos">
+                      <img src="/static/images/medsos/email.png" alt="" width="30px" height="30px">
+                    </div>
+                  </td>
+                  <td>
+                    <p class="medsos2">
+                      <a class="link_medsos" href="http://mail.google.com/" target="_blank">informatika@unimal.ac.id</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="text-center p-4 bg-dark">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#">Gem BOT</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const brands = ["SD", "SMP", "SMA", "SMK"]
+    const models = [
+      { id: 1, brand: 'SD', model: '-- Pilih kelas --' },
+      { id: 2, brand: 'SD', model: '1 SD' },
+      { id: 3, brand: 'SD', model: '2 SD' },
+      { id: 4, brand: 'SD', model: '3 SD' },
+      { id: 5, brand: 'SD', model: '4 SD' },
+      { id: 6, brand: 'SD', model: '5 SD' },
+      { id: 6, brand: 'SD', model: '6 SD' },
+      { id: 7, brand: 'SMP', model: '-- Pilih kelas --' },
+      { id: 8, brand: 'SMP', model: '1 SMP' },
+      { id: 9, brand: 'SMP', model: '2 SMP' },
+      { id: 10, brand: 'SMP', model: '3 SMP' },
+      { id: 11, brand: 'SMA', model: '-- Pilih kelas --' },
+      { id: 12, brand: 'SMA', model: '1 SMA' },
+      { id: 12, brand: 'SMA', model: '2 SMA' },
+      { id: 12, brand: 'SMA', model: '3 SMA' },
+      { id: 13, brand: 'SMK', model: '-- Pilih kelas --' },
+      { id: 14, brand: 'SMK', model: '1 SMK' },
+      { id: 14, brand: 'SMK', model: '2 SMK' },
+      { id: 14, brand: 'SMK', model: '3 SMK' },
+    ]
+    function onPageLoad() {
+      brands.forEach(brand => {
+        const option = document.createElement("option");
+        option.text = brand;
+        option.value = brand;
+
+        document.getElementById("brands").appendChild(option)
+
+      })
+    }
+
+    function onChangeBrand() {
+      const selectedBrand = document.getElementById("brands").value;
+      const filteredModels = models.filter((model) => model.brand === selectedBrand)
+
+      document.getElementById("models").length = 0
+      filteredModels.forEach(obj_model => {
+        const model = document.createElement("option");
+        model.value = obj_model.model;
+        model.text = obj_model.model;
+
+        document.getElementById("models").appendChild(model)
+      })
+
+    }
+
+
+    function saveToLocalstorage() {
+      const fname = document.getElementById("fname").value ? document.getElementById("fname").value : "No Name"
+      // const phone = document.getElementById("phone").value
+      const tglisifeedback = document.getElementById("tglisifeedback").value
+      // const tglselesai = document.getElementById("tglselesai").value
+      const models = document.getElementById("models").value
+      const alamat = document.getElementById("alamat").value
+
+      localStorage.setItem("Nama Lengkap", fname)
+      // localStorage.setItem("Nomor Hp", phone)
+      localStorage.setItem("Tanggal Isi Feedback", tglisifeedback)
+      // localStorage.setItem("Tanggal Selesai Penyewaan", tglselesai)
+      localStorage.setItem("Tingkatan ", models)
+      localStorage.setItem("Alamat", alamat)
+    }
+
+    function validateForm() {
+      if (document.forms["formPendaftaran"]["fname"].value == "") {
+        alert("Nama Tidak Boleh Kosong");
+        document.forms["formPendaftaran"]["fname"].focus();
+        return false;
+      }
+
+      if (document.forms["formPendaftaran"]["phone"].value == "") {
+        alert("Nomor Hp Tidak Boleh Kosong");
+        document.forms["formPendaftaran"]["phone"].focus();
+        return false;
+      }
+
+      if (document.forms["formPendaftaran"]["tglmulai"].value == "") {
+        alert("Silahkan Masukan Tanggal Isi Feedback");
+        document.forms["formPendaftaran"]["tglisifeedback"].focus();
+        return false;
+      }
+
+      if (document.forms["formPendaftaran"]["models"].selectedIndex < 1) {
+        alert("Silahkan Pilih Tingkatan Terlebih Dahulu");
+        document.forms["formPendaftaran"]["models"].focus();
+        return false;
+      }
+
+      if (document.forms["formPendaftaran"]["alamat"].value == "") {
+        alert("Nomor Hp Boleh Kosong");
+        document.forms["formPendaftaran"]["alamat"].focus();
+        return false;
+      }
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,29 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<! <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <title>Gem BOT</title>
-    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bot.css') }}" />
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
-    <!-- Header -->
+    <!---navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="home">Gem BOT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="portofolio">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="bot">BOT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Feedback">Feedback</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <!---navbar-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="maps">
+          <div class=" fw-bold  text-center">
+            <br>
+            <h1><b>BOT</b></h1>
+            <br />
+            <h2 class="text-primary"><b>PENASARAN TENTANG TEKNIK INFORMATIKA ? <br />
+                Silahkan tanya pada Gem BOT YAA!!</b></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <nav class="navbar navbar-expand-lg navbar-white bg-white">
       <div class="container">
         <img src="{{url_for('static', filename='images/gembot.png')}}" height="50" , width="auto" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar"
+          aria-label="Toggle">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mob-navbar">
@@ -68,8 +118,12 @@
     </div>
     <!-- Chatbot Body End  -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='js/all.js') }}"></script>
     <script>
@@ -137,5 +191,91 @@
         return `${h.slice(-2)}:${m.slice(-2)}`;
       }
     </script>
+    </main>
+
+    <!-- Akhir Chatbot -->
+
+    <!-- Awal Web -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="footer_menu">
+              <h3><b>Gem BOT</b></h3>
+            </div>
+            <p>
+              Gem BOT adalah sebuah web chatbot yang akan memberikan informasi mengenai prodi
+              Teknik Informatika Universitas Malikussaleh
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer_menu">
+              <h3><b>Menu</b></h3>
+            </div>
+            <div class="konten">
+              <p><a class="link_medsos" href="home">Home</a></p>
+              <p><a class="link_medsos" href="about">About Us</a></p>
+              <p><a class="link_medsos" href="portofolio">Portofolio</a></p>
+              <p><a class="link_medsos" href="blog">Blog</a></p>
+              <p><a class="link_medsos" href="bot">BOT</a></p>
+              <p><a class="link_medsos" href="Feedback">Feedback</a></p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer_menu">
+              <h3><b>Alamat</b></h3>
+            </div>
+            <p>
+              JL. Kampus Unimal Bukit Indah Blang Pulo, Kec. Muara Satu, Kabupaten Aceh Utara
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer_menu">
+              <h3><b>Media Sosial</b></h3>
+            </div>
+            <div class="tabel_a">
+              <div class="tabel1">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="medsos">
+                        <img src="/static/images/medsos/instagram.png" alt="" width="30px" height="30px">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="medsos2">
+                        <a class="link_medsos" href="https://www.instagram.com/teknikinformatika_unimal/"
+                          target="_blank">teknikinformatika_unimal</a>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="medsos">
+                        <img src="/static/images/medsos/email.png" alt="" width="30px" height="30px">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="medsos2">
+                        <a class="link_medsos" href="http://mail.google.com/"
+                          target="_blank">informatika@unimal.ac.id</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-4 bg-dark">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="#">Gem BOT</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
   </body>
-</html>
+
+  </html>

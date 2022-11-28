@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- AWAL NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="home">Gem BOT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="portofolio">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="bot">BOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Feedback">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <!-- AKHIR NAVBAR -->
+
+    <!--AWAL CAROUSEL -->
+    <div class="atas">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/images/carrousel/TI.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>GEDUNG TEKNIK INFORMATIKA</h5>
+
+                        <!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Feedback
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <a href="Feedback" role="button" class="btn btn-secondary">Isi Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="/static/images/carrousel/unimal hebat.jpg" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="/static/images/carrousel/unimal rumah kita.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--AKHIR CAROUSEL -->
+
+    <div class="keunggulan">
+        <br>
+        <!-- AWAL VISI -->
+        <div class="row d-flex justify-content-center g-5">
+            <div class="col-5">
+                <div class="unggul">
+                    <img src="/static/images/perusahaan/unimal.png" alt="" width="500px" height="200px">
+                </div>
+            </div>
+            <!-- card -->
+            <div id="card-visi" class="card col-5 mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/static/images/keunggulan/logo TI.png" class="img-fluid rounded-start"
+                            alt="Universitas Malikussaleh">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">VISI dan MISI</h3>
+                            <h4>Teknik Informatika</h4>
+                            <p class="card-text">
+                            <h5>Visi</h5>
+
+                            Dalam menghadapi kemajuan ilmu pengetahuan dan teknologi, program studi Teknik Informatika
+                            diharapkan mampu menghasilkan
+                            lulusan yang unggul dan profesional dalam bidang Teknologi Informasi yang mampu berkompetisi
+                            di daerah, luar daerah,
+                            bahkan di luar negeri tahun 2020.
+
+                            <h5>Misi</h5>
+
+                            <p>1. Meningkatkan kualitas dan perluasan cakupan pendidikan tinggi untuk menghasilkan SDM
+                                dengan Pengetahuan, Keahlian, dan
+                                Kemampuan keinformatikaan yang semakin kompetitif.</p>
+
+                            <p>2. Memicu dan memacu kegiatan penelitian yang inovatif dan kreatif secara terpadu dengan
+                                melibatkan seluruh bidang keahlian
+                                keinformatikaan.</p>
+
+                            <p>3. Meningkatkan pembinaan keterkaitan jaringan keahlian keinformatikaan dan keahlian
+                                bidang lainnya secara sinergis dan
+                                akseleratif.</p>
+
+                            <p>4. Meningkatkan kegiatan layanan keinformatikaan yang bermanfaat bagi masyarakat secara
+                                intensif dan ekstensif.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AKHIR VISI -->
+        <br>
+        <!-- AWAL SEJARAH -->
+        <div class="row">
+            <div class="favorite">
+                <div class="mobil">
+                    <h1>
+                        <b>Sejarah</b>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- AKHIR SEJARAH -->
+
+        <!-- AWAL CARD SEJARAH -->
+        <div class="row d-flex justify-content-center">
+            <div class=" col-md-4 p-3">
+                <div class="card h-100">
+                    <img src="/static/images/fav/logo unimal.jpg" class="card-img-top" alt="logo unimal">
+                    <div class="card-body">
+                        <h5 class="card-title">UNIVERSITAS MALIKUSSALEH</h5>
+                        <Universitas class="card-text">Universitas Malikussaleh didirikan dengan
+                            mengambil nama besar Raja Kerajaan Samudera Pasai pertama, yang dilandasi pada
+                            semangat estafet kepemimpinan dan pembangunan yang telah diletakkannya melalui
+                            sifat
+                            kepeloporan, kedinamisan, serta patriotismenya Sultan Malikussaleh. Pada masa
+                            pemerintahan Presiden Megawati Soekarno Putri dikeluarkannya Surat Keputusan
+                            Presiden (Keppres) Nomor 95 Tahun 2001, tanggal 1 Agustus 2001 mengenai status
+                            Universitas Malikussaleh menjadi universitas negeri.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 p-3">
+                <div class="card h-100">
+                    <img src="/static/images/fav/logo TI.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TEKNIK INFORMATIKA</h5>
+                        <p class="card-text">Universitas Malikussaleh mendirikan program studi Teknik
+                            Informatika dengan Surat Keputusan Dirjen
+                            Dikti bernomor:
+                            2289/D/T/2003 dan bertanggal 05 September 2003.
+                            Untuk peringkat akreditasi, Jurusan Teknik Informatika Universitas
+                            Malikussaleh
+                            (Unimal) dinyatakan
+                            terakreditasi
+                            berdasarkan Surat Keputusan Badan Akreditasi Nasional Perguruan Tinggi
+                            (BAN-PT)
+                            Nomor
+                            383/SK/BAN-PT/Akred/S/IX/2014.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AKHIR CARD SEJARAH -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="footer_menu">
+                            <h3><b>Gem BOT</b></h3>
+                        </div>
+                        <p>
+                            Gem BOT adalah sebuah web chatbot yang akan memberikan informasi mengenai prodi
+                            Teknik Informatika Universitas Malikussaleh
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footer_menu">
+                            <h3><b>Menu</b></h3>
+                        </div>
+                        <div class="konten">
+                            <p><a class="link_medsos" href="home">Home</a></p>
+                            <p><a class="link_medsos" href="about">About Us</a></p>
+                            <p><a class="link_medsos" href="portofolio">Portofolio</a></p>
+                            <p><a class="link_medsos" href="blog">Blog</a></p>
+                            <p><a class="link_medsos" href="bot">BOT</a></p>
+                            <p><a class="link_medsos" href="Feedback">Feedback</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footer_menu">
+                            <h3><b>Alamat</b></h3>
+                        </div>
+                        <p>
+                            JL. Kampus Unimal Bukit Indah Blang Pulo, Kec. Muara Satu, Kabupaten Aceh Utara
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footer_menu">
+                            <h3><b>Media Sosial</b></h3>
+                        </div>
+                        <div class="tabel_a">
+                            <div class="tabel1">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="medsos">
+                                                <img src="/static/images/medsos/instagram.png" alt="" width="30px"
+                                                    height="30px">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="medsos2">
+                                                <a class="link_medsos"
+                                                    href="https://www.instagram.com/teknikinformatika_unimal/"
+                                                    target="_blank">teknikinformatika_unimal</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="medsos">
+                                                <img src="/static/images/medsos/email.png" alt="" width="30px"
+                                                    height="30px">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="medsos2">
+                                                <a class="link_medsos" href="http://mail.google.com/"
+                                                    target="_blank">informatika@unimal.ac.id</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="card-footer text-center bg-dark">
+                © 2022 Copyright :
+                <a class="text-reset fw-bold" href="#">Gem BOT</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

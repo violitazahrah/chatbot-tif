@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous" />
+  <title>Blog</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="home">Gem BOT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portofolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="bot">BOT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Feedback">Feedback</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <br>
+  <div class="container">
+    <div class="row">
+      <!--Berita Utama-->
+      <div class=" card sm-3 ">
+        <div class="row ">
+          <div class="berita_utama col-md-4">
+            <img src="/static/images/berita/beritautama.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class=" col-sm-8">
+            <div class="card-body">
+              <h4 class="card-title">Rektor Unimal Kukuhkan Dua Guru Besar Ilmu Tanah dan Teknik Informatika</h4>
+              <div class="cuplikan">
+                <p class=" card-text"><small class="text-muted">12 March 2022</small></p>
+                <p class=" card-text">Universitas Malikussaleh kembali mengukuhkan dua guru besar
+                  baru yakni Prof Dr Ir Khusrizal MP dan Prof Dr Ir Dahlan
+                  Abdullah MKom IPU ASEAN Eng yang dilaksanakan di Aula Cut Meutia, Kampus Bukit Indah
+                  Lhokseumawe, Sabtu (12/3/2022).
+                  <a href="berita_utama" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Selengkapnya...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Batas-->
+      <div class=" container">
+
+        <div class="row">
+          <!--Berita 1-->
+          <div class="col-sm-4">
+            <br>
+            <div class="card">
+              <img src="/static//images/berita/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahasiswa Teknik Informatika Gelar Pelatihan Karya Tulis Ilmiah</h5>
+                <p class="card-text"><small class="text-muted">31 January 2021</small></p>
+                <p class="card-text">Himpunan Mahasiswa Teknik Informatika (Himatif) Fakultas Teknik Universitas
+                  Malikussaleh menggelar pelatihan online
+                  penulisan karya tulis ilmiah, Sabtu (30/1/2021).
+                  <a href="berita1" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Selengkapnya...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Berita 2-->
+          <div class="col-sm-4">
+            <br>
+            <div class="card">
+              <img src="/static/images/berita/2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teknik Informatika Unimal Laksanakan Ujian Skripsi Secara Online</h5>
+                <p class="card-text"><small class="text-muted">13 April 2020</small></p>
+                <p class="card-text">UNIMALNEWS | Lhokseumawe - Merebaknya wabah Corona Virus Disease (Covid-19) di
+                  Indonesia sejak
+                  Pertengahan Maret 2020 menyebabkan adanya perubahan
+                  dalam berbagai sektor kehidupan.
+                  <a href="berita2" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Selengkapnya...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Berita 3-->
+          <div class="col-sm-4">
+            <br>
+            <div class="card">
+              <img src="/static/images/berita/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HEBAT !!! MAHASISWA TEKNIK INFORMATIKA UNIMAL MERAIH JUARA II LOMBA WEB DESIGN
+                  PELINDO III DI SURABAYA</h5>
+                <p class="card-text"><small class="text-muted">17 February 2017</small></p>
+                <p class="card-text">Mahasiswa Teknik Informatika Unimal meraih juara II Lomba Web Design yang
+                  dilaksanakan PT.
+                  Pelindo III di Surabaya pada
+                  13 Desember 2016 lalu.
+                  <a href="berita3" data-bs-toggle="tooltip" data-bs-title="Default tooltip">Selengkapnya...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Gem BOT</b></h3>
+          </div>
+          <p>
+            Gem BOT adalah sebuah web chatbot yang akan memberikan informasi mengenai prodi
+            Teknik Informatika Universitas Malikussaleh
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Menu</b></h3>
+          </div>
+          <div class="konten">
+            <p><a class="link_medsos" href="home">Home</a></p>
+            <p><a class="link_medsos" href="about">About Us</a></p>
+            <p><a class="link_medsos" href="portofolio">Portofolio</a></p>
+            <p><a class="link_medsos" href="blog">Blog</a></p>
+            <p><a class="link_medsos" href="bot">BOT</a></p>
+            <p><a class="link_medsos" href="Feedback">Feedback</a></p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Alamat</b></h3>
+          </div>
+          <p>
+            JL. Kampus Unimal Bukit Indah Blang Pulo, Kec. Muara Satu, Kabupaten Aceh Utara
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer_menu">
+            <h3><b>Media Sosial</b></h3>
+          </div>
+          <div class="tabel_a">
+            <div class="tabel1">
+              <table>
+                <tr>
+                  <td>
+                    <div class="medsos">
+                      <img src="/static/images/medsos/instagram.png" alt="" width="30px" height="30px">
+                    </div>
+                  </td>
+                  <td>
+                    <p class="medsos2">
+                      <a class="link_medsos" href="https://www.instagram.com/teknikinformatika_unimal/"
+                        target="_blank">teknikinformatika_unimal</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="medsos">
+                      <img src="/static/images/medsos/email.png" alt="" width="30px" height="30px">
+                    </div>
+                  </td>
+                  <td>
+                    <p class="medsos2">
+                      <a class="link_medsos" href="http://mail.google.com/" target="_blank">informatika@unimal.ac.id</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-4 bg-dark">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#">Gem BOT</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <br>
+</body>
+
+</html>

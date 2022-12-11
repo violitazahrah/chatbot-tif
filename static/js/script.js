@@ -25,14 +25,20 @@ function postData() {
       feedback: localStorage.getItem("feedback"),
     }),
   });
+  localStorage.clear();
+}
+
+function clearData() {
+  inputName.value = "";
+  inputTingkatan.value = "";
+  inputKelas.value = "";
+  inputDate.value = "";
+  inputFeedback.value = "";
+  return alert("Feedback kamu berhasil dikirim");
 }
 
 btnSubmit.onclick = function () {
-  console.log(inputName.value);
-  console.log(inputTingkatan.value);
-  console.log(inputKelas.value);
-  console.log(inputDate.value);
-  console.log(inputFeedback.value);
   setValue();
   postData();
+  return clearData();
 };

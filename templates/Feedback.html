@@ -116,7 +116,7 @@
 
         <br>
         <div class="row">
-          <input id="btnSubmit" type="button" value="Submit">
+          <input class="btn btn-primary" id="btnSubmit" type="button" value="Kirim Feedback">
         </div>
       </form>
     </div>
@@ -205,106 +205,6 @@
 
   <!-- MY SCRIPT -->
   <script src="../static/js/script.js"></script>
-
-  <!-- <script>
-    const brands = ["SD", "SMP", "SMA", "SMK"]
-    const models = [
-      { id: 1, brand: 'SD', model: '-- Pilih kelas --' },
-      { id: 2, brand: 'SD', model: '1 SD' },
-      { id: 3, brand: 'SD', model: '2 SD' },
-      { id: 4, brand: 'SD', model: '3 SD' },
-      { id: 5, brand: 'SD', model: '4 SD' },
-      { id: 6, brand: 'SD', model: '5 SD' },
-      { id: 6, brand: 'SD', model: '6 SD' },
-      { id: 7, brand: 'SMP', model: '-- Pilih kelas --' },
-      { id: 8, brand: 'SMP', model: '1 SMP' },
-      { id: 9, brand: 'SMP', model: '2 SMP' },
-      { id: 10, brand: 'SMP', model: '3 SMP' },
-      { id: 11, brand: 'SMA', model: '-- Pilih kelas --' },
-      { id: 12, brand: 'SMA', model: '1 SMA' },
-      { id: 12, brand: 'SMA', model: '2 SMA' },
-      { id: 12, brand: 'SMA', model: '3 SMA' },
-      { id: 13, brand: 'SMK', model: '-- Pilih kelas --' },
-      { id: 14, brand: 'SMK', model: '1 SMK' },
-      { id: 14, brand: 'SMK', model: '2 SMK' },
-      { id: 14, brand: 'SMK', model: '3 SMK' },
-    ]
-    function onPageLoad() {
-      brands.forEach(brand => {
-        const option = document.createElement("option");
-        option.text = brand;
-        option.value = brand;
-
-        document.getElementById("brands").appendChild(option)
-
-      })
-    }
-
-    function onChangeBrand() {
-      const selectedBrand = document.getElementById("brands").value;
-      const filteredModels = models.filter((model) => model.brand === selectedBrand)
-
-      document.getElementById("models").length = 0
-      filteredModels.forEach(obj_model => {
-        const model = document.createElement("option");
-        model.value = obj_model.model;
-        model.text = obj_model.model;
-
-        document.getElementById("models").appendChild(model)
-      })
-
-    }
-
-
-    function saveToLocalstorage() {
-      const fname = document.getElementById("fname").value ? document.getElementById("fname").value : "No Name"
-      // const phone = document.getElementById("phone").value
-      const tglisifeedback = document.getElementById("tglisifeedback").value
-      // const tglselesai = document.getElementById("tglselesai").value
-      const models = document.getElementById("models").value
-      const alamat = document.getElementById("alamat").value
-
-      localStorage.setItem("Nama Lengkap", fname)
-      // localStorage.setItem("Nomor Hp", phone)
-      localStorage.setItem("Tanggal Isi Feedback", tglisifeedback)
-      // localStorage.setItem("Tanggal Selesai Penyewaan", tglselesai)
-      localStorage.setItem("Tingkatan ", models)
-      localStorage.setItem("Alamat", alamat)
-    }
-
-    function validateForm() {
-      if (document.forms["formPendaftaran"]["fname"].value == "") {
-        alert("Nama Tidak Boleh Kosong");
-        document.forms["formPendaftaran"]["fname"].focus();
-        return false;
-      }
-
-      if (document.forms["formPendaftaran"]["phone"].value == "") {
-        alert("Nomor Hp Tidak Boleh Kosong");
-        document.forms["formPendaftaran"]["phone"].focus();
-        return false;
-      }
-
-      if (document.forms["formPendaftaran"]["tglmulai"].value == "") {
-        alert("Silahkan Masukan Tanggal Isi Feedback");
-        document.forms["formPendaftaran"]["tglisifeedback"].focus();
-        return false;
-      }
-
-      if (document.forms["formPendaftaran"]["models"].selectedIndex < 1) {
-        alert("Silahkan Pilih Tingkatan Terlebih Dahulu");
-        document.forms["formPendaftaran"]["models"].focus();
-        return false;
-      }
-
-      if (document.forms["formPendaftaran"]["alamat"].value == "") {
-        alert("Nomor Hp Boleh Kosong");
-        document.forms["formPendaftaran"]["alamat"].focus();
-        return false;
-      }
-    }
-
-  </script> -->
 </body>
 
 </html>

@@ -5,6 +5,28 @@ const inputDate = document.getElementById("tglisifeedback");
 const inputFeedback = document.getElementById("feedback");
 const btnSubmit = document.getElementById("btnSubmit");
 
+function setValue() {
+  localStorage.setItem("nama", inputName.value);
+  localStorage.setItem("tingkatan", inputTingkatan.value);
+  localStorage.setItem("kelas", inputKelas.value);
+  localStorage.setItem("feedback", inputFeedback.value);
+}
+
+function postData() {
+  fetch("https://6394605a4df9248eada048fe.mockapi.io/feedBack", {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      nama: localStorage.getItem("nama"),
+      tingkatan: localStorage.getItem("tingkatan"),
+      kelas: localStorage.getItem("kelas"),
+      feedback: localStorage.getItem("feedback"),
+    }),
+  });
+}
+
 btnSubmit.onclick = function () {
   console.log(inputName.value);
   console.log(inputTingkatan.value);
@@ -12,12 +34,5 @@ btnSubmit.onclick = function () {
   console.log(inputDate.value);
   console.log(inputFeedback.value);
   setValue();
+  postData();
 };
-
-function setValue() {
-  localStorage.setItem("nama", inputName.value);
-  localStorage.setItem("tingkatan", inputTingkatan.value);
-  localStorage.setItem("kelas", inputKelas.value);
-  localStorage.setItem("tanggal", inputDate.value);
-  localStorage.setItem("feedback", inputFeedback.value);
-}

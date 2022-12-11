@@ -1,310 +1,319 @@
 /*navbar*/
-.navbar-brand{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.navbar-brand {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.nav-link{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.nav-link {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.nav-link:hover{
-    transform: scale(1.2);
+.nav-link:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
 
 /*Home*/
-.keunggulan{
-    background-color: #E4EFF6;
+.keunggulan {
+  background-color: #e4eff6;
 }
-.unggul{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    margin-top: 140px;
-    margin-bottom: 140px;
+.unggul {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 140px;
 }
 
 #card-visi {
-    max-width: 540px;
+  max-width: 540px;
 }
 
-.card_unggul{
-    text-align: center;
-    padding: 10px;
+.card_unggul {
+  text-align: center;
+  padding: 10px;
 }
-.card_unggul:hover{
-    transform: scale(1.02);
+.card_unggul:hover {
+  transform: scale(1.02);
 }
-.gambar_unggul{
-    text-align: center;
+.gambar_unggul {
+  text-align: center;
 }
-.icon{
-    text-align: center;
-    padding-top: 5px;
+.icon {
+  text-align: center;
+  padding-top: 5px;
 }
-.text{
-    text-align: center;
+.text {
+  text-align: center;
 }
-.favorite{
-    padding-top: 5px;
+.favorite {
+  padding-top: 5px;
 }
-.mobil{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+.mobil {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
-.mobil_favorite{
-    padding: 10px;
+.mobil_favorite {
+  padding: 10px;
 }
-.fav{
-    padding: 10px;
+.fav {
+  padding: 10px;
 }
-.card_fav:hover{
-    transform: translate(-10px, -10px);
+.card_fav:hover {
+  transform: translate(-10px, -10px);
 }
-.official_partner{
-    justify-content: center;
-    background-color: #E4EFF6;
+.official_partner {
+  justify-content: center;
+  background-color: #e4eff6;
 }
-.partner{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.partner {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.card_review{
-    padding: 5px;
+.card_review {
+  padding: 5px;
 }
-.card_review:hover{
-    transform: scale(1.02);
+.card_review:hover {
+  transform: scale(1.02);
 }
 
 /*about us*/
-.deskripsi_layanan{
-    background-color: #d9eef8;
-    padding-top: 20px;
+.deskripsi_layanan {
+  background-color: #d9eef8;
+  padding-top: 20px;
 }
-.deskripsi{
-    text-align: center;
+.deskripsi {
+  text-align: center;
 }
-.deskripsi2{
-    text-align: justify;
+.deskripsi2 {
+  text-align: justify;
 }
-.layanan{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: justify;
-    margin: 5px;
+.layanan {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: justify;
+  margin: 5px;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-.armada{
-    margin-left: 3%;
-    margin-right: 3%;
+.armada {
+  margin-left: 3%;
+  margin-right: 3%;
 }
-.card_mobil{
-    padding: 5px;
+.card_mobil {
+  padding: 5px;
 }
-.card_mobil:hover{
-    transform: scale(1.02);
+.card_mobil:hover {
+  transform: scale(1.02);
 }
-.dimiliki{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+.dimiliki {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
-h5{
-    text-align: center;
+h5 {
+  text-align: center;
 }
-.jazz{
-    padding-top: 8px;
+.jazz {
+  padding-top: 8px;
 }
-.elf{
-    padding-top: 24px;
-    padding-bottom: 27px;
+.elf {
+  padding-top: 24px;
+  padding-bottom: 27px;
 }
 
 /*portofolio*/
-.card_portofolio:hover{
-    transform: scale(1.02);
+.card_portofolio:hover {
+  transform: scale(1.02);
 }
-
 
 /*blog*/
 /*Bagian Berita*/
-.card-text{
-    text-align: justify;
+.card-text {
+  text-align: justify;
 }
-  /*Berita1*/
-.h2{
-    text-align: center;
-} 
-.berita1{
-    height: 400px;
-    width: 700px;
-} 
-.tanggal{
-    text-align: center;
+/*Berita1*/
+.h2 {
+  text-align: center;
 }
-.header1{
-    margin-top: 25px;
+.berita1 {
+  height: 400px;
+  width: 700px;
 }
-.isiberita{
-    margin-top: 25px;
-    margin-bottom: 50px;
-    text-align: justify;
-    position: relative;
+.tanggal {
+  text-align: center;
 }
-  /*Berita Samping*/
-.sidenews{
-    margin-top: 40px;
-    padding-left: 50px;
+.header1 {
+  margin-top: 25px;
 }
-  /*Tombol Up*/
-.up-icon{
-      position: fixed;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: rgba(192,192,192,0.3);
-      bottom: 40px;
-      right: 20px;
-      text-decoration: none;
-      text-align: center;
-      line-height: 50px;
-      color:#ffffff;
+.isiberita {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: justify;
+  position: relative;
 }
-.fa-chevron-circle-up{font-size: 50px;line-height: 50px;color:#e1ebf5;}
+/*Berita Samping*/
+.sidenews {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+/*Tombol Up*/
+.up-icon {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(192, 192, 192, 0.3);
+  bottom: 40px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+}
+.fa-chevron-circle-up {
+  font-size: 50px;
+  line-height: 50px;
+  color: #e1ebf5;
+}
 
 /*contact*/
-.maps{
-    background: #E4EFF6;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.maps {
+  background: #e4eff6;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-
 
 /*Footer*/
-.footer{
-    background-color: #55a0c5;
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.footer {
+  background-color: #55a0c5;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.footer_menu{
-    padding-top: 20px;
-    margin-bottom: 15px;
-    text-align: center;
+.footer_menu {
+  padding-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
-.alamat{
-    text-align: right;
+.alamat {
+  text-align: right;
 }
-.link{
-    color: white;
+.link {
+  color: white;
 }
-.konten{
-    margin-left: 80px;
-    padding-bottom: 30px;
+.konten {
+  margin-left: 80px;
+  padding-bottom: 30px;
 }
-.tabel_a{
-    margin-left: 50px;
+.tabel_a {
+  margin-left: 50px;
 }
-.medsos2{
-    margin-left: 15px;
-    margin-top: 15px;
+.medsos2 {
+  margin-left: 15px;
+  margin-top: 15px;
 }
-.link_medsos{
-    color: white;
-    text-decoration: none;
+.link_medsos {
+  color: white;
+  text-decoration: none;
 }
-.link_medsos:hover{
-    color: yellow;
+.link_medsos:hover {
+  color: yellow;
 }
-.text-reset{
-    text-decoration: none;
+.text-reset {
+  text-decoration: none;
 }
-.gambar_footer{
-    padding: 10px;
-    margin: 10px;
+.gambar_footer {
+  padding: 10px;
+  margin: 10px;
 }
-.wisata:hover{
-    transform: scale(1.02);
+.wisata:hover {
+  transform: scale(1.02);
 }
 
 /*Menu Todos*/
 * {
-    box-sizing: border-box;
-    
-  }
+  box-sizing: border-box;
+}
 
-  .text_todos{
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  input[type=text], select, textarea {
+.text_todos {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="date"],
+select,
+textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #0462aa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: purple;
+}
+
+.todos {
+  border-radius: 30px;
+  background-color: #e4eff6;
+  padding: 40px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    margin-top: 0;
   }
-  
-  
-  input[type=number], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  input[type=date], select, textarea {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  input[type=submit] {
-    background-color: #0462aa;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type=submit]:hover {
-    background-color: purple;
-  }
-  
-  .todos {
-    border-radius: 30px;
-    background-color: #E4EFF6;
-    padding: 40px;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+}
